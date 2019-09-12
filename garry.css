@@ -1,0 +1,363 @@
+#particles-js{
+	width: 100%;
+	height:100vh;
+	background:black;
+	position:absolute;
+}
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	
+	
+}
+
+.flex{
+	position: absolute;
+	color: #9e9e9e8f;
+	font-family: 'Lexend Giga', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	margin-left: 50%;
+	margin-top: 30vh;
+	transform: translate(-300px);
+	pointer-events: none;
+
+}
+.high{
+	color: purple;
+
+}
+.button{
+	position: absolute;
+	color: #9e9e9e8f;
+	font-family: 'Lexend Giga', sans-serif;
+	font-size: 28px;
+	text-align: center;
+	margin-left: 38%;
+	margin-top: 65vh;
+	width: 375px;
+	height: 50px;
+	border: 2.5px solid #9e9e9e8f;
+	padding-top: 15px;
+	border-radius: 11.8px;
+	
+}
+.button:hover{
+	background-color: purple;
+	cursor: pointer;
+	color: black;
+	border-color: black;
+	
+	
+}
+.button:hover>.fa-arrow-right{
+	transition: transform 0.3s ease-in-out ;
+	transform: rotate(90deg);
+		}	
+.content{
+	margin-top: 625px;
+	position: absolute;
+	width: 100%;
+}
+.navbar{
+
+	width: 1349px;
+	display: flex;
+	/*change this if something happens*/
+	position: relative;
+	bottom:0;
+	left:0;
+	height: 50px;
+	background:#595959;
+	border-bottom: 3px solid purple;
+	z-index: 99;
+}
+.home ,.about ,.port, .cont{
+	display: inline;
+	font-family: 'Lexend Giga', sans-serif;
+	font-size:20px;
+	letter-spacing: 0.5px;
+	padding: 10px;
+	margin-left: 45px;
+	line-height: 30px;
+	cursor: pointer;
+
+}
+
+
+
+.home:hover ,.about:hover,.port:hover, .cont:hover{
+	color: purple;	
+	animation:color 1s;
+}
+.home:active,.about:active,.port:active, .cont:active{
+	color: purple;
+	border-top: 3.5px solid purple;
+	
+}
+@keyframes color{
+	0%{
+		opacity: 0.2;
+		color: purple;	
+	}
+	
+} 
+.aniAbout{
+	animation: text 1s ease-in-out;
+}
+#abt{
+	border: 3px solid purple;
+	box-shadow: 5px 5px 5px 5px grey;
+	border-radius: 2.8px;
+
+}
+#abt>h3{
+	font-family: 'Lexend Giga', sans-serif;
+	font-size:20px;
+	text-align:center;
+	text-transform: uppercase;
+}
+#abt>p{
+	font-family: 'Lexend Giga', sans-serif;
+	font-size:15px;
+	text-align:center;
+}
+@keyframes text{
+	0%{
+		opacity: 0;
+    transform: translateX(-300px);
+	}
+	30%{
+		letter-spacing: 45px;
+		margin-left: 40%;
+	}
+}
+.navbar{
+	animation: navy 2s ease;
+}
+
+#skill{
+	border: 3px solid purple;
+	box-shadow: 5px 5px 5px 5px grey;
+	border-radius: 2.8px;
+
+}
+#skill>h3{
+	font-family: 'Lexend Giga', sans-serif;
+	font-size:20px;
+	text-align:center;
+	text-transform: uppercase;
+}
+#skill>p{
+	font-family: 'Lexend Giga', sans-serif;
+	font-size:15px;
+	text-align:center;
+}
+.logo:hover{
+	
+	border-radius: none;
+	opacity: 0.5;
+	transition: 0.8s;
+
+}
+.fb div a{
+	color: black;
+	font-size:30px;
+
+}
+.fb div{
+border-radius: 50%;
+cursor: pointer;
+}
+.fb div:hover a .fab{
+	transform: rotateY(360deg);
+	transition: 0.3s;
+	color: purple;
+
+}
+.fb div:hover{
+	color: purple;
+	
+}
+
+.up a{
+	font-size:125px;
+	margin-left: 85vw;
+	color: black;
+
+}
+@keyframes popDown{
+	0%{transform:translateY(-100px);
+}}
+@keyframes popUp{
+	0%{transform:translateY(0px);
+}}
+/* Making the site responsive 
+(worst part of site may be.)   */
+@media screen and (max-width: 1365px){
+	.content{
+		margin-top: 565px;
+		width: 100%;
+	}
+	#nav{
+		width: 100%;
+	}
+
+}
+@media screen and (max-width: 1190px){
+	.button{
+		margin-left: 50%;
+		transform:translate(-50%);
+	}
+	#nav{
+		width: 100%;
+	}
+
+}
+@media screen and (max-width: 979px){
+	.flex{
+		font-size: 14px;
+		text-align: center;
+	margin-left: 50%;
+	margin-top: 30vh;
+	transform: translate(-300px);
+	}
+	.button{
+		margin-left: 40%;
+		
+	}
+	.up{
+		margin-left:-50px;
+		font-size:18px;
+	}
+	#nav{
+		width: 100%;
+	}
+
+}
+@media screen and (max-width: 764px){
+	.flex{
+		font-size: 12px;
+		text-align: center;
+	margin-left: 50%;
+	margin-top: 30vh;
+	transform: translate(-300px);
+	}
+	.button{
+		margin-left: 40%;
+		transform:translate(-50%);
+		font-size: 18px;
+		border: 1.5px solid #9e9e9e8f;
+		width: auto;
+		padding-left: 17px;padding-right: 17px;
+	}
+	#nav{
+		width: 100%;
+	}
+	.home ,.about ,.port, .cont{
+		font-size:15px;
+	letter-spacing: 0.3px;
+	padding: 6px;
+	margin-left: 35px;
+	}
+}
+@media screen and (max-width: 619px){
+	.flex{
+		font-size: 12px;
+		margin-left: 50%;
+		transform: translate(-50%);
+	}
+	.button{
+		margin-left: 50%;
+		transform: translate(-50%);
+		padding-top: 17px;
+	}
+	#nav{
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 500px){
+	#nav{
+		width: 100%;
+	}
+	.home ,.about ,.port, .cont{
+		font-size:15px;
+	letter-spacing: 0.3px;
+	padding: 6px;
+	margin-left: 15px;
+	}
+	.up{
+		margin-left:-400px;
+		font-size:12px;
+	}
+}
+@media screen and (max-width: 1111px){
+	.hex-wrap{
+		
+		
+		flex-direction: column;
+		
+	}
+	.hex-wrap>div{
+		margin-top:50px;
+		transform: translate(80%);
+
+	}
+	#nav{
+		width: 100%;
+	}
+
+}
+@media screen and (max-width: 500px){
+	.hex-wrap{
+		margin-left:-250px;
+		
+
+	}
+}
+
+@media screen and (max-width: 1111px){
+	.hex{
+		
+		
+		flex-direction: column;
+		
+	}
+	.hex>div{
+		margin-top:50px;
+		transform: translate(80%);
+		translate:text 1s ease-in-out;
+	}
+	#nav{
+		width: 100%;
+	}
+
+}
+@media screen and (max-width: 500px){
+	.hex{
+		margin-left:-250px;
+		}
+	.fb{
+		margin-left: -150px;
+	}	
+
+}
+@media screen and (max-width: 500px){
+	.logo-div{
+	flex-direction: column;
+	}	
+
+}
+@media screen and (max-width: 700px){
+		.logo-div{
+	flex-direction: column;
+	}	
+		.logo-div>p{
+	margin-top: 35px;
+	}	
+}
+
+	
